@@ -1,3 +1,5 @@
+package com.learnJava.data;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,6 +9,13 @@ public class Student {
     private double gpa;
     private String gender;
     List<String> activities = new ArrayList<>();
+
+    public Student() {}
+
+    public Student(String name) {
+
+        this.name = name;
+    }
 
     public Student(String name, int gradeLevel, double gpa, String gender, List<String> activities) {
         this.name = name;
@@ -48,6 +57,11 @@ public class Student {
         this.gpa = gpa;
     }
 
+    public void printListOfActivities() {
+
+        System.out.println(this.activities);
+    }
+
 
 
     public List<String> getActivities() {
@@ -60,7 +74,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "com.learnJava.data.Student{" +
                 "name='" + name + '\'' +
                 ", gradeLevel=" + gradeLevel +
                 ", gpa=" + gpa +

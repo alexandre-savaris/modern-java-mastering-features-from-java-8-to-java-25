@@ -1,3 +1,5 @@
+package com.learnJava.functionalInterfaces;
+
 import java.util.function.Predicate;
 
 public class PredicateExample1 {
