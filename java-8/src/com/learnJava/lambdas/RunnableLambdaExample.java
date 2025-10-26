@@ -1,3 +1,5 @@
+package com.learnJava.lambdas;
+
 public class RunnableLambdaExample {
 
     static void main() {
